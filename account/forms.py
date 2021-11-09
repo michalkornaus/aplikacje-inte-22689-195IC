@@ -4,14 +4,14 @@ from .models import Profile
 
 
 class LoginForm(forms.Form):
-    username = forms.CharField()
+    username = forms.CharField(label="Nazwa użytkownika")
     password = forms.CharField(widget=forms.PasswordInput)
 
 
 class UserRegistrationForm(forms.ModelForm):
-    password = forms.CharField(label='Password',
+    password = forms.CharField(label='Hasło',
                                widget=forms.PasswordInput)
-    password2 = forms.CharField(label='Repeat password',
+    password2 = forms.CharField(label='Powtórz hasło',
                                 widget=forms.PasswordInput)
 
     class Meta:
@@ -21,7 +21,7 @@ class UserRegistrationForm(forms.ModelForm):
     def clean_password2(self):
         cd = self.cleaned_data
         if cd['password'] != cd['password2']:
-            raise forms.ValidationError('Passwords don\'t match.')
+            raise forms.ValidationError('Hasła nie pasują do siebie.')
         return cd['password2']
 
 
