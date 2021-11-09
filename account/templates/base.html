@@ -23,7 +23,7 @@
   {% endif %}
   <span class="user">
     {% if request.user.is_authenticated %}
-		{% if request.user.first_name > 0 %}
+		{% if request.user.first_name|length > 0 %}
 			Witaj {{ request.user.first_name }},
 		{% else %}
 			Witaj {{request.user.username }},
