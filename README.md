@@ -2,7 +2,7 @@
 # Lab2 - Rejestracja użytkowników
 
 ### Link do mojej aplikacji internetowej z rejestracją użytkowników:  
-[pythonanywhereWebsite](http://michalkornaus.pythonanywhere.com/)
+[michalkornaus.pythonanywhere.com](http://michalkornaus.pythonanywhere.com/)
 
 ### Główny widok
 ![mainPage](https://user-images.githubusercontent.com/56958103/141152312-68489df2-14bf-4555-b895-f8cda9eacec6.PNG)
