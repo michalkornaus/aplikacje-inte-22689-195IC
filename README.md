@@ -6,7 +6,7 @@
 
 ### Główny widok
 ![mainPage](https://user-images.githubusercontent.com/56958103/141152312-68489df2-14bf-4555-b895-f8cda9eacec6.PNG)
-Po wejściu na stronę poprzez główny adres *[mainPage](michalkornaus.pythonanywhere.com)* lub poprzez podstronę *[mainPage2](michalkornaus.pythonanywhere.com/account)*
+Po wejściu na stronę poprzez główny adres *[mainPage](http://michalkornaus.pythonanywhere.com/)* lub poprzez podstronę *[mainPage2](http://michalkornaus.pythonanywhere.com/account/)*
 ukazuje nam się widok logowania się użytkownika. Mamy z tej pozycji do dyspozycji parę widoków uwierzytelniających - możemy się zalogować przy pomocy istniejących danych, zarejestrować nowego użytkownika lub przypomnieć hasło przy pomocy wiadomości mail na email użytkownika.  
 
 ### Rejestracja użytkownika
