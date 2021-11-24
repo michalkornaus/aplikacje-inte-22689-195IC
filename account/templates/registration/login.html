@@ -20,4 +20,17 @@
     </form>
     <p><a href="{% url 'password_reset' %}">Zapomniałeś hasła?</a></p>
   </div>
+  <div class="social">
+	<ul>
+		<li class="facebook">
+			<a href="{% url 'social:begin' 'facebook' %}">Zaloguj się przy użyciu Facebook</a>
+		</li>
+		<li class="google">
+			<a href="{% url 'social:begin' 'google-oauth2' %}">Zaloguj się przy użyciu Google</a>
+		</li>
+		<li class="github">
+			<a href="{% url 'social:begin' 'github' %}">Zaloguj się przy użyciu Github</a>
+		</li>
+	</ul>
+  </div>
 {% endblock %}
