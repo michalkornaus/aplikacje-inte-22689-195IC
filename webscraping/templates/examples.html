@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% block content %}
+<div>
+    <h4>Przykład 1:</h4>
+    <ul>
+        <b>{{second_p_text}}</b><br>
+        Ilość paragrafów p: {{all_p_tagslen}}
+    </ul>
+</div>
+<div>
+    <h4>Przykład 2:</h4>
+    {% for items in top_items  %}
+    <ul>
+			<b>{{items.title}}</b><br>
+            {{items.review}}
+    </ul>
+    {% endfor %}
+</div>
+<div>
+    <h4>Przykład 3:</h4>
+    {% for im in image_data %}
+    <ul>
+        <b>Image source:</b>  {{im.src}}<br>
+			Alternative text:  {{im.alt}}
+    </ul>
+    {% endfor %} <br>
+</div>
+<div>
+    <h4>Przykład 4:</h4>
+    {% for product in all_products %}
+    <ul>
+        <li><b>{{product.name}}</b><br>
+            {{product.description}}<br>
+            {{product.price}}<br>
+            {{product.reviews}}<br>
+            {{product.image}}
+		</li>
+    </ul>
+    {% endfor %}
+</div>
+{% endblock %}

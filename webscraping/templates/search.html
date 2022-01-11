@@ -1,0 +1,34 @@
+{% extends 'base.html' %}
+{% block content %}
+<form method="POST" class="w40">
+    {% csrf_token %}
+    <div class="form-group">
+        <label>Podaj URL strony internetowej</label>
+        <input type="text" name="web_link" class="form-control" required placeholder="URL">
+    </div>
+    <div class="form-group">
+        <label >Podaj nazwę poszukiwanego elementu</label>
+        <input type="text" class="form-control" name="element" required placeholder="Element">
+    </div>
+    <button type="submit" class="btn btn-dark">Wyszukaj</button>
+</form>
+
+{% if web_link %}
+
+<h4>Przeszukana strona: <a href="{{web_link}}">{{web_link}}</a></h4>
+<h4>Poszukiwany element: <span class="text-success">{{element}}</span></h4>
+<h4>Liczba znalezionych elementów: {{amount}}</h4><br>
+
+{% for elements in allElements %}
+    <h4>Element {{forloop.counter}}</h4>
+	<p>Tekst = {{elements.findText}}</p>
+	<p>ID = {{elements.findId}}</p>
+	<p>Klasa = {{elements.findClass}}</p>
+	<p>Alt = {{elements.findAlt}}</p>
+	<p>Source = {{elements.findSrc}}</p>
+	<p>Href = {{elements.findHref}}</p>
+{% endfor %}
+
+{% endif %}
+
+{% endblock %}
