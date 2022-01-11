@@ -8,7 +8,6 @@ def examples(request):
     page = requests.get("https://webscraper.io/test-sites/e-commerce/allinone/phones/touch")
     soup = BeautifulSoup(page.content, "html.parser")
 	
-	
     # Przykład 1
     all_p_tags = []
     for element in soup.select("p"):
