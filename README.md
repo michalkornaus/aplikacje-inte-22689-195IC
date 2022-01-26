@@ -4,8 +4,7 @@
 #### Aplikacja CRUD to taka gdzie możemy tworzyć (Create), pozyskiwać (Retrieve), aktualizować (Update) oraz usuwać (Delete) obiekty. 
 ##### W mojej aplikacji skorzystałem z poradnika ze strony *https://www.bezkoder.com/django-react-axios-rest-framework/* - wprowadziłem również parę modyfikacji w modelu Django i komponentach React.
 
-#### Widok głównej aplikacji po odpaleniu obu serwerów Django oraz React, jak i po skonfigurowaniu portów oraz ustawień obu aplikacji. Zmieniłem motyw aplikacji z tutoriali, na zbiór użytkowników. 
-#### W tym miejscu dodałem dynamiczny przycisk do usuwania wszystkich użytkowników (nie pokazuje się jeżeli nie ma użytkowników) oraz komunikat po prawej stronie zmienia swoją treść również jeżeli nie ma użytkowników.
+#### Widok głównej aplikacji po odpaleniu obu serwerów Django oraz React, jak i po skonfigurowaniu portów oraz ustawień obu aplikacji. Zmieniłem motyw aplikacji z tutoriali, na zbiór użytkowników. W tym miejscu dodałem dynamiczny przycisk do usuwania wszystkich użytkowników (nie pokazuje się jeżeli nie ma użytkowników) oraz komunikat po prawej stronie zmienia swoją treść również jeżeli nie ma użytkowników.
 ![screen0](/screeny/0.PNG)
 #### Kod chowający przycisk do usuwania wszystkich użytkowników. W utworzonej zmiennej *length* przechowuje długość tablicy użytkowików, dzięki której wiem czy jest jakiś użytkownik. Jeżeli nie ma użytkowników na stronę wstawia się pusty div.
 ![screen1](/screeny/1.PNG)
