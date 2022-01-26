@@ -155,13 +155,13 @@ export default class UsersList extends Component {
                 </li>
               ))}
           </ul>
-
+          {length > 0 ? (
           <button
             className="m-3 btn btn-sm btn-danger"
-            onClick={this.removeAllUsers}
-          >
+            onClick={this.removeAllUsers}>
             Usuń wszystkich
-          </button>
+          </button>) 
+          : (<div></div>)}
         </div>
         <div className="col-md-6">
           {currentUser ? (
